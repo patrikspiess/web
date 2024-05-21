@@ -17,6 +17,5 @@ jobs:
         run: sudo npm install --global surge
       - name: Deploy application
         run: |
-          export
-          echo "$SURGE_LOGIN"
+          echo "Publishing as $SURGE_LOGIN"
           surge source/ --domain https://pspiess.surge.sh
