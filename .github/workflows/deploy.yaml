@@ -13,4 +13,6 @@ jobs:
       - name: Install surge
         run: sudo npm install --global surge
       - name: Deploy application
-        run: surge source/ --domain https://pspiess.surge.sh
+        run: |
+          echo $SURGE_LOGIN
+          surge source/ --domain https://pspiess.surge.sh
