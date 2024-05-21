@@ -5,7 +5,7 @@ A web frontend which deploys to surge.
 Develop the frontend into the source folder. Use any HTML5, CSS and JS technology. Within this
 project I use a simple [bootstrap](https://getbootstrap.com/) page.
 
-## Installing Surge
+## Installing surge
 
 https://surge.sh/help/getting-started-with-surge
 
@@ -19,9 +19,9 @@ https://surge.sh/help/getting-started-with-surge
 To automatically publish this web application a GitHub Workflow (Actions) is used.
 See [.github/workflows/deploy.yaml](.github/workflows/deploy.yaml).
 
-## Preparing Surge for auto-deployment
+## Preparing surge for auto-deployment
 
-To be able to automatically deploy a project to Surge you have to generate a token and save your
+To be able to automatically deploy a project to surge you have to generate a token and save your
 username (e-mail address) and the token to the respective environment variables.
 
 - Login with your username to surge.sh
@@ -57,7 +57,7 @@ username (e-mail address) and the token to the respective environment variables.
     Or set these variables in your CI/CD setting when using it in a pipeline. Make sure to not
     expose the token to any log-files ot output.
 
-- Run the Surge deployment task with these variables in your workflow.
+- Run the surge deployment task with these variables in your workflow.
 
     ```yaml
     jobs:
