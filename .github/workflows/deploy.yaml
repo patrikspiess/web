@@ -9,7 +9,7 @@ jobs:
     environment: production
     env:
       SURGE_LOGIN: ${{ vars.SURGE_LOGIN }}
-      SURGE_TOKEN: ${{ vars.SURGE_TOKEN }}
+      SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
