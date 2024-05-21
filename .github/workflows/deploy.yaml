@@ -15,4 +15,5 @@ jobs:
       - name: Deploy application
         run: |
           echo "$SURGE_LOGIN"
+          echo "${{ vars.SURGE_LOGIN }}"
           surge source/ --domain https://pspiess.surge.sh
