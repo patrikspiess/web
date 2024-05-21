@@ -10,6 +10,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Install surge
-        run: sudo apt-get install surge
+        run: sudo npm install --global surge
       - name: Deploy application
         run: surge source/ --domain https://pspiess.surge.sh
