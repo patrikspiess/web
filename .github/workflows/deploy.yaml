@@ -4,7 +4,7 @@ run-name: Deploy workflow invoked by ${{ github.actor }}
 on: [push]
 
 jobs:
-  tests:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
