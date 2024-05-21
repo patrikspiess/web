@@ -7,6 +7,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment: production
+    env:
+      SURGE_LOGIN: ${{ vars.SURGE_LOGIN }}
+      SURGE_TOKEN: ${{ vars.SURGE_TOKEN }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -15,5 +18,5 @@ jobs:
       - name: Deploy application
         run: |
           export
-          echo "${{ vars.SURGE_LOGIN }}"
+          echo "$SURGE_LOGIN"
           surge source/ --domain https://pspiess.surge.sh
