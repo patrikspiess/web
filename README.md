@@ -3,7 +3,8 @@
 A web frontend which deploys to surge.
 
 Develop the frontend into the source folder. Use any HTML5, CSS and JS technology. Within this
-project I use a simple [bootstrap](https://getbootstrap.com/) page.
+project I use a simple [bootstrap](https://getbootstrap.com/) page. It is then deployed to surge, a
+service for static web publishing for Front-End Developers
 
 ## Installing surge
 
