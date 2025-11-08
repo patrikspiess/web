@@ -15,9 +15,13 @@ jobs:
         uses: actions/checkout@v4
       - name: Install surge
         run: sudo npm install --global surge
-      - name: Deploy application
+      - name: Teardown application
         run: |
-          echo "Publishing as $SURGE_LOGIN"
-          echo "Publishing with $SURGE_TOKEN"
-          # surge source/ --domain https://pspiess.surge.sh
-          surge source/
+          echo "Using account $SURGE_LOGIN"
+          surge teardown pspiess.surge.sh
+
+      # - name: Deploy application
+      #   run: |
+      #     echo "Publishing as $SURGE_LOGIN"
+      #     # surge source/ --domain https://pspiess.surge.sh
+      #     surge source/
