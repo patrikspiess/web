@@ -18,5 +18,6 @@ jobs:
       - name: Deploy application
         run: |
           echo "Publishing as $SURGE_LOGIN"
+          echo "Publishing with $SURGE_TOKEN"
           # surge source/ --domain https://pspiess.surge.sh
           surge source/
